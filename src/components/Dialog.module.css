@@ -1,0 +1,44 @@
+dialog {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  color: black;
+  border: none;
+  width: auto;
+  max-width: 500px;
+  padding: 0;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialogHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.dialogBody {
+  /* bootstrap modal body */
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+  text-align: left;
+}
+
+.dialogFooter {
+  /* bootstrap modal footer */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
+}
